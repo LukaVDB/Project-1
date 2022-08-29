@@ -72,6 +72,17 @@
 
   
       ,"page1": {
+          "title": "Vocabulary",
+          "content": "Vocab from college board . Sequence: two or more lines Def: Defines a variable when using input and output Input: Data going into the code Output: Data coming out of the code .",
+          "url": "https://lukavdb.github.io/Project-1/vocabulary/overview",
+          "relUrl": "/vocabulary/overview",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "This website is powered by Luka 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://lukavdb.github.io/Project-1/about/",
@@ -103,7 +114,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://lukavdb.github.io/Project-1/robots.txt",
