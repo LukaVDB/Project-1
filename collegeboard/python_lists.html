@@ -281,14 +281,15 @@ person {'name': 'Luka Van Den Boomen', 'age': 16, 'score': 90.0, 'langs': ['Pyth
 
 <span class="c1"># Append to List a Dictionary of key/values related to a person and cars</span>
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">,</span>
-    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Mortensen"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"October 21"</span><span class="p">,</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Luka"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Van Den Boomen"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"September 29"</span><span class="p">,</span>
     <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
     <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"jmortensen@powayusd.com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2015-Fusion"</span><span class="p">,</span> <span class="s2">"2011-Ranger"</span><span class="p">,</span> <span class="s2">"2003-Excursion"</span><span class="p">,</span> <span class="s2">"1997-F350"</span><span class="p">,</span> <span class="s2">"1969-Cadillac"</span><span class="p">]</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"none"</span><span class="p">],</span>
+    <span class="s2">"Phone"</span><span class="p">:</span> <span class="s2">"858-705-5029"</span>
 <span class="p">})</span>
-
+<span class="nb">print</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
 <span class="c1"># Append to List a 2nd Dictionary of key/values</span>
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
     <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Sunny"</span><span class="p">,</span>
@@ -297,6 +298,7 @@ person {'name': 'Luka Van Den Boomen', 'age': 16, 'score': 90.0, 'langs': ['Pyth
     <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"Temecula"</span><span class="p">,</span>
     <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"snaidu@powayusd.com"</span><span class="p">,</span>
     <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"4Runner"</span><span class="p">]</span>
+
 <span class="p">})</span>
 
 <span class="c1"># Print the data structure</span>
@@ -313,7 +315,8 @@ person {'name': 'Luka Van Den Boomen', 'age': 16, 'score': 90.0, 'langs': ['Pyth
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{'FirstName': 'John', 'LastName': 'Mortensen', 'DOB': 'October 21', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']}, {'FirstName': 'Sunny', 'LastName': 'Naidu', 'DOB': 'August 2', 'Residence': 'Temecula', 'Email': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}]
+<pre>[{'FirstName': 'Luka', 'LastName': 'Van Den Boomen', 'DOB': 'September 29', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['none'], 'Phone': '858-705-5029'}]
+[{'FirstName': 'Luka', 'LastName': 'Van Den Boomen', 'DOB': 'September 29', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['none'], 'Phone': '858-705-5029'}, {'FirstName': 'Sunny', 'LastName': 'Naidu', 'DOB': 'August 2', 'Residence': 'Temecula', 'Email': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}]
 </pre>
 </div>
 </div>
