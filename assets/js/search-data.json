@@ -24,10 +24,10 @@
   
     
         ,"post2": {
-            "title": "Title",
+            "title": "Info db",
             "content": "InfoDb = [] InfoDb.append({ &quot;FirstName&quot;: &quot;Luka&quot;, &quot;LastName&quot;: &quot;Van Den Boomen&quot;, &quot;DOB&quot;: &quot;September 29&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;Email&quot;: &quot;lukavdboomen@icloud.com&quot;, &quot;Hobbies&quot;: [&quot;Soccer&quot;, &quot;Videogames&quot;] }) print(InfoDb) . [{&#39;FirstName&#39;: &#39;Luka&#39;, &#39;LastName&#39;: &#39;Van Den Boomen&#39;, &#39;DOB&#39;: &#39;September 29&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Email&#39;: &#39;lukavdboomen@icloud.com&#39;, &#39;Hobbies&#39;: [&#39;Soccer&#39;, &#39;Videogames&#39;]}] . def print_data(d_rec): print(d_rec[&quot;FirstName&quot;], d_rec[&quot;LastName&quot;]) print(&quot; t&quot;, &quot;Residence:&quot;, d_rec[&quot;Residence&quot;]) print(&quot; t&quot;, &quot;Birth Day:&quot;, d_rec[&quot;DOB&quot;]) print(&quot; t&quot;, &quot;Email:&quot;, d_rec[&quot;Email&quot;]) print(&quot; t&quot;, &quot;Hobbies: &quot;, end=&quot;&quot;) print(&quot;, &quot;.join(d_rec[&quot;Hobbies&quot;])) print() # for loop algorithm iterates on length of InfoDb def for_loop(): print(&quot;For loop output n&quot;) for record in InfoDb: print_data(record) for_loop() . For loop output Luka Van Den Boomen Residence: San Diego Birth Day: September 29 Email: lukavdboomen@icloud.com Hobbies: Soccer, Videogames .",
-            "url": "https://lukavdb.github.io/Project-1/2022/09/05/Info-db.html",
-            "relUrl": "/2022/09/05/Info-db.html",
+            "url": "https://lukavdb.github.io/Project-1/fastpages/jupyter/week%202/2022/09/05/Info-db.html",
+            "relUrl": "/fastpages/jupyter/week%202/2022/09/05/Info-db.html",
             "date": " • Sep 5, 2022"
         }
         
