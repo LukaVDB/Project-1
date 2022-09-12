@@ -21,8 +21,11 @@ title: App Lab Planning
 - I also had problems with adding certain images because they were the wrong image type
 
 # Questions
-| Question Number | Question | Correct Answer |
-| --------------- | --------------------------------------------- | ----------- |
-|        1        | What team has won the most Champions Leagues? | Real Madrid |
-| 2 | Who won the 2014 World Cup?                   | Germany     |
-| 3 | Who won the Champions League in 2021?         | Chelsea     |
+
+
+
+| Question Number |                    Question                   | Correct Answer |
+| --------------- | --------------------------------------------- | -------------- |
+|        1        | What team has won the most Champions Leagues? |   Real Madrid  |
+|        2        | Who won the 2014 World Cup?                   |    Germany     |
+|        3        | Who won the Champions League in 2021?         |    Chelsea     |
