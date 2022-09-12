@@ -30,4 +30,4 @@ title: App Lab Planning
 | Question Number | Question | Correct Answer |
 | ----------- | ----------- | ----------- |
 | 1 | What team has won the most Champions Leagues? | Real Madrid |
-| Paragraph   | Text        |
+| 3 | Who won the Champions League in 2021? | Chelsea |
