@@ -22,10 +22,9 @@ title: App Lab Planning
 
 # Questions
 | Question Number | Question | Correct Answer |
-|-|-|
+|-|-|-|
 | 1 | What team has won the most Champions Leagues? | Real Madrid |
-|-|-|
+|-|-|-|
 | 2 | Who won rhw 2014 World Cup? | Germany |
-|-|-|
+|-|-|-|
 | 3 | Who won the Champions League in 2021? | Chelsea |
-|-|-|
