@@ -18,4 +18,4 @@ layout: notebook
 # Gratefulness
 - I am grateful for my peers who are willing to help me
 - I am grateful for my coach who is willing to get the best out of me
-- I am grateful for my 
+- I am grateful for my parents who have given me countless opportunities
