@@ -12,7 +12,7 @@ layout: notebook
 # Things Happening Now
 40 % of students have a high amount of stress.
 1/3 are so depressed it is difficult to function.
-40% say that they feel hopeless.
+40% say that they feel hopeless. 
 60% of students have a lot of anxiety.
 
 # Gratefulness
