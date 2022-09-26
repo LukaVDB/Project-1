@@ -36,7 +36,7 @@
     
         ,"post3": {
             "title": "JavaScript Notebook",
-            "content": "console.log(&quot;Hello World&quot;) . Hello World .",
+            "content": "console.log(&quot;Hello World&quot;) . Hello World . var msg = &quot;Hello, World!&quot;; console.log(msg); . Hello, World! . var age = &quot;16&quot;; console.log(age); . 16 .",
             "url": "https://lukavdb.github.io/Project-1/fastpages/javascript/week%206/2022/09/25/JavaScript-Notebook.html",
             "relUrl": "/fastpages/javascript/week%206/2022/09/25/JavaScript-Notebook.html",
             "date": " • Sep 25, 2022"
