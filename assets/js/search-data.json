@@ -35,10 +35,10 @@
   
     
         ,"post3": {
-            "title": "Info db",
+            "title": "JavaScript Notebook",
             "content": "console.log(&quot;Hello World&quot;) . Hello World .",
-            "url": "https://lukavdb.github.io/Project-1/JavaScript/JavaScriptNotebook",
-            "relUrl": "/JavaScript/JavaScriptNotebook",
+            "url": "https://lukavdb.github.io/Project-1/fastpages/javascript/week%206/2022/09/25/JavaScript-Notebook.html",
+            "relUrl": "/fastpages/javascript/week%206/2022/09/25/JavaScript-Notebook.html",
             "date": " • Sep 25, 2022"
         }
         
