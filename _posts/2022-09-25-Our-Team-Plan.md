@@ -13,4 +13,4 @@ layout: post
 
 
 
-![]({{site.baseurl}}/images/Scrum Team Process - Emaad Mir, Edwin Abraham, Luka Van Den Boomen, Jishnu Singiresu.png 
+![]({{site.baseurl}}/images/Scrum Team Process - Emaad Mir, Edwin Abraham, Luka Van Den Boomen, Jishnu Singiresu.png)
