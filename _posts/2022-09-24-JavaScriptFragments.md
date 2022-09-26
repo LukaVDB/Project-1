@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: App planning.
+description: Team Members
 categories: [JavaScript, Week 6]
 title: JavaScript Fragments
 ---
