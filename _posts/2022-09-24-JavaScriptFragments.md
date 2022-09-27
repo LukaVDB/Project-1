@@ -9,9 +9,6 @@ title: JavaScript Fragments
 # Our Group Project Members
 
 
- {% include FragmentTable.md %}
-
-
 
 <div id="JavaScriptGroup"> 
 </div>
