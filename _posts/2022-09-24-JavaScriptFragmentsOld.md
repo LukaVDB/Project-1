@@ -9,12 +9,5 @@ title: JavaScript Fragments
 # Our Group Project Members
 
 <div id="JavaScriptGroup">
-    <table>
-        <tr>
-            <td>Luka</td>
-            <td>Jishnu</td>
-            <td>Edwin</td>
-            <td>Emaad</td>
-        </tr>
-    </table>
+ {% include nav_front.html %}
 </div>
