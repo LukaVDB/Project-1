@@ -34,6 +34,9 @@ title: JavaScript Fragments
     const div = document.getElementById("JavaScriptTable");
     div.appendChild(table);
 
+
+</script>
+
 <table>
 
 
@@ -47,4 +50,3 @@ title: JavaScript Fragments
 </table>
 
  
-</script>
