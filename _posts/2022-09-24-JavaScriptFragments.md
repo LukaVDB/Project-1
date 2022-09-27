@@ -8,6 +8,5 @@ title: JavaScript Fragments
 
 # Our Group Project Members
 
-<div id="JavaScriptGroup">
+
  {% include nav_front.html %}
-</div>
