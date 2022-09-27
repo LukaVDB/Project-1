@@ -69,7 +69,7 @@
     
         ,"post6": {
             "title": "JavaScript Fragments",
-            "content": "Our Group Project Members . &lt;script&gt; let Group = [&quot;Emaad&quot;, &quot;Edwin&quot;, &quot;Luka&quot;, &quot;jishnu&quot;]; const table = document.createElement (&quot;table&quot;); const row = document.createElement (&quot;tr&quot;); for (let i = 0; i &lt; Group.length; i++) { let data = document. createElement (&quot;td&quot;); let node = document.createTextNode(Group [i]); data.appendChild(node); row.appendChild(data); } table.appendChild(row); const div = document.getElementById(&quot;JavaScriptTable&quot;); div.appendChild(table); &lt;/script&gt; .",
+            "content": "Our Group Project Members . .",
             "url": "https://lukavdb.github.io/Project-1/javascript/week%206/2022/09/24/JavaScriptFragments.html",
             "relUrl": "/javascript/week%206/2022/09/24/JavaScriptFragments.html",
             "date": " • Sep 24, 2022"
