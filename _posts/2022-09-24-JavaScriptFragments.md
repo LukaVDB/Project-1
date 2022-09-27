@@ -8,23 +8,6 @@ title: JavaScript Fragments
 
 # Our Group Project Members
 
-<div id="JavaScriptTable"> < div>
-<script>
-let teammates = ["Emaad", "Edwin", "Luka", "jishnu"];
-const table = document.createElement ("table");
-const row = document.createElement ("tr");
-for (let i = 0; i < teammates.length; i++) {
-let data = document. createElement ("td");
-let node = document.createTextNode(teammates [i]);
-data.appendChild(node);
-row.appendChild(data);
-table.appendChild(row);
-const div = document.getElementById("JavaScriptTable");
-div.appendChild(table);
-</script>
-
-<div id="JavaScriptGroup"> 
-</div>
 
 
 
