@@ -33,11 +33,18 @@ title: JavaScript Fragments
     table.appendChild(row);
     const div = document.getElementById("JavaScriptTable");
     div.appendChild(table);
-    
-    
-    
-    
 
+<table>
+
+
+<td> Luka </td>
+<td> Jishnu </td>
+<td> Edwin </td>
+<td> Emaad </td>
+    
+    
+    
+</table>
 
  
 </script>
