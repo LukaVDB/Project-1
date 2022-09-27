@@ -9,4 +9,4 @@ title: JavaScript Fragments
 # Our Group Project Members
 
 
- {% include nav_front.html %}
+ {% include FragmentTable.md %}
