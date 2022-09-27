@@ -13,7 +13,7 @@ title: JavaScript Fragments
 
 
  <script>
-        
+   
         
 
     let Group = ["Emaad", "Edwin", "Luka", "jishnu"];
@@ -24,7 +24,7 @@ title: JavaScript Fragments
     
     
         let data = document.createElement ("td");
-        let node = document.createTextNode(Group [i]);
+        let node = document.createTextNode(Group[i]);
         data.appendChild(node);
         row.appendChild(data);
     
@@ -34,8 +34,13 @@ title: JavaScript Fragments
     const div = document.getElementById("JavaScriptTable");
     div.appendChild(table);
 
+    
+
 
 </script>
+
+
+
 
 <table>
 
