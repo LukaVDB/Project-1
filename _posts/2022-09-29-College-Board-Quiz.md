@@ -23,3 +23,7 @@ layout: post
 ![]({{ site.baseurl }}/images/Screen Shot 2022-10-02 at 8.58.18 PM.png)
 
 - The biggest challenge was trying to figure out the differences between the different options that were available to be selected since they were all having similar answers that have to do with the functions
+
+# Identifying and Correcting Errors Quiz
+
+![]({{ site.baseurl }}/images/Screen Shot 2022-10-09 at 8.22.57 PM.png)
