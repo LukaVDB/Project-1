@@ -199,7 +199,7 @@ window.onload = wrap_img;
 
 <span class="n">url</span> <span class="o">=</span> <span class="s2">"https://football-prediction-api.p.rapidapi.com/api/v2/predictions"</span>
 
-<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"market"</span><span class="p">:</span><span class="s2">"classic"</span><span class="p">,</span><span class="s2">"iso_date"</span><span class="p">:</span><span class="s2">"2022-10-09"</span><span class="p">,</span><span class="s2">"federation"</span><span class="p">:</span><span class="s2">"UEFA"</span><span class="p">}</span>
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"market"</span><span class="p">:</span><span class="s2">"classic"</span><span class="p">,</span><span class="s2">"iso_date"</span><span class="p">:</span><span class="s2">"2022-10-09"</span><span class="p">,</span><span class="s2">"federation"</span><span class="p">:</span><span class="s2">"UEFA"</span><span class="p">}</span> <span class="c1"># the date, match type, and competition</span>
 
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
 	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"686830ba27msh513db9752c312c4p1115d7jsn310f307263ee"</span><span class="p">,</span>
@@ -211,10 +211,10 @@ window.onload = wrap_img;
 <span class="c1"># print(response.text)</span>
 
 
-<span class="n">teams</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'data'</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">team</span> <span class="ow">in</span> <span class="n">teams</span><span class="p">:</span>  <span class="c1"># countries is a list</span>
-    <span class="k">if</span> <span class="n">team</span><span class="p">[</span><span class="s2">"away_team"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"PSV Eindhoven"</span><span class="p">:</span>  <span class="c1"># this filters for USA</span>
-        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">team</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>  <span class="c1"># this finds key, value pairs in country</span>
+<span class="n">teams</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'data'</span><span class="p">)</span> <span class="c1"># set teams equal data</span>
+<span class="k">for</span> <span class="n">team</span> <span class="ow">in</span> <span class="n">teams</span><span class="p">:</span>  <span class="c1"># teams is a list above</span>
+    <span class="k">if</span> <span class="n">team</span><span class="p">[</span><span class="s2">"away_team"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"PSV Eindhoven"</span><span class="p">:</span>  <span class="c1"># this filters for games by PSV</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">team</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>  <span class="c1"># this finds key, value pairs in in this game by PSV</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 </pre></div>
 
