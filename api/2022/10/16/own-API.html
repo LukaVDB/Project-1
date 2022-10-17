@@ -142,61 +142,6 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://aerisweather1.p.rapidapi.com/forecasts/92127"</span>
-
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"686830ba27msh513db9752c312c4p1115d7jsn310f307263ee"</span><span class="p">,</span>
-	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"aerisweather1.p.rapidapi.com"</span>
-<span class="p">}</span>
-
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
-
-<span class="c1"># print(response.text)</span>
-
-<span class="n">json</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-
-<span class="n">loc</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'place'</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">periods</span> <span class="ow">in</span> <span class="n">response</span><span class="p">:</span>  <span class="c1"># place is a list</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">periods</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">periods</span><span class="p">[</span><span class="s2">"state"</span><span class="p">]</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/var/folders/2p/fnt1087x1cb9j8lw30wbtt0w0000gq/T/ipykernel_15131/3482235627.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">     16</span> loc <span class="ansi-blue-fg">=</span> response<span class="ansi-blue-fg">.</span>json<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>get<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'place'</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     17</span> <span class="ansi-green-fg">for</span> periods <span class="ansi-green-fg">in</span> response<span class="ansi-blue-fg">:</span>  <span class="ansi-red-fg"># place is a list</span>
-<span class="ansi-green-fg">---&gt; 18</span><span class="ansi-red-fg">     </span>print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">f'{periods["name"]} {periods["state"]}'</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">TypeError</span>: byte indices must be integers or slices, not str</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
-
 <span class="n">url</span> <span class="o">=</span> <span class="s2">"https://football-prediction-api.p.rapidapi.com/api/v2/predictions"</span>
 
 <span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"market"</span><span class="p">:</span><span class="s2">"classic"</span><span class="p">,</span><span class="s2">"iso_date"</span><span class="p">:</span><span class="s2">"2022-10-09"</span><span class="p">,</span><span class="s2">"federation"</span><span class="p">:</span><span class="s2">"UEFA"</span><span class="p">}</span> <span class="c1"># the date, match type, and competition</span>
