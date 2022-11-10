@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Blog about CollegeBoard Final.
 categories: [markdown, Week 13]
-title: Welcome To My First Post
+title: CollegeBoard Final Blog
 ---
 # Welcome To My CollegeBoard Final Blog
 
