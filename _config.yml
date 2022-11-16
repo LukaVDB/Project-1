@@ -38,9 +38,8 @@ baseurl: "/Project-1" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
+  skin: dark
   social_links:
-    twitter: fastdotai
-    github: LukaVDB
 
 # Set this to true to get LaTeX math equation support
 use_math: 
