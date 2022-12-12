@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -231,6 +231,138 @@ window.onload = wrap_img;
 <li>are you sick? </li>
 <li>No, go to work. Yes, Don't go to work.</li>
 </ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">awake</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">sick</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="k">if</span> <span class="n">awake</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">sick</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Go to work"</span><span class="p">)</span>
+    
+<span class="k">else</span><span class="p">:</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"stay at home"</span><span class="p">)</span>
+    
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Go to work
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c1">#sets variables for the game</span>
+<span class="n">num_guesses</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">user_guess</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">upper_bound</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">lower_bound</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1">#generates a random number</span>
+<span class="n">number</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># print(number)     #for testing purposes</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"I'm thinking of a number between 1 and 100."</span><span class="p">)</span>
+
+<span class="c1">#Write a function that gets a guess from the user using input()</span>
+<span class="k">def</span> <span class="nf">guess</span><span class="p">():</span>
+    <span class="c1">#get a guess from the user</span>
+    <span class="n">user_guess</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your guess: "</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">user_guess</span>
+
+<span class="c1">#Change the print statements to give feedback on whether the player guessed too high or too low</span>
+<span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">guess</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span>
+    <span class="k">if</span> <span class="n">guess</span> <span class="o">&lt;</span> <span class="n">number</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Your guess is too low."</span><span class="p">)</span> <span class="c1">#change this</span>
+        <span class="n">lower_bound</span> <span class="o">=</span> <span class="n">guess</span>
+    <span class="k">elif</span> <span class="n">guess</span> <span class="o">&gt;</span> <span class="n">number</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Your guess is too high."</span><span class="p">)</span> <span class="c1">#change this</span>
+        <span class="n">upper_bound</span> <span class="o">=</span> <span class="n">guess</span>
+    <span class="k">return</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span>
+
+<span class="k">while</span> <span class="n">user_guess</span> <span class="o">!=</span> <span class="n">number</span><span class="p">:</span>
+    <span class="n">user_guess</span> <span class="o">=</span> <span class="n">guess</span><span class="p">()</span>
+    <span class="n">num_guesses</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You guessed </span><span class="si">{</span><span class="n">user_guess</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+    <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span> <span class="o">=</span> <span class="n">search</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">user_guess</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Guess a number between </span><span class="si">{</span><span class="n">lower_bound</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">upper_bound</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You guessed the number in </span><span class="si">{</span><span class="n">num_guesses</span><span class="si">}</span><span class="s2"> guesses!"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>I'm thinking of a number between 1 and 100.
+You guessed 50.
+Your guess is too high.
+Guess a number between 0 and 50.
+You guessed 25.
+Your guess is too low.
+Guess a number between 25 and 50.
+You guessed 33.
+Your guess is too high.
+Guess a number between 25 and 33.
+You guessed 28.
+Your guess is too low.
+Guess a number between 28 and 33.
+You guessed 30.
+Guess a number between 28 and 33.
+You guessed the number in 5 guesses!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/Project-1/images/copied_from_nb/../images/ScreenShot2022-12-11at8.53.14PM.png" alt="ImageTwo"></p>
 
 </div>
 </div>

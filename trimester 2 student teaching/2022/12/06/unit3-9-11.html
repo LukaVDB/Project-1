@@ -803,6 +803,45 @@ ELSE
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>I'm thinking of a number between 1 and 100.
+You guessed None.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-06-unit3-9-11.ipynb Cell 20</span> in <span class="ansi-cyan-fg">&lt;cell line: 32&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-06-unit3-9-11.ipynb#X25sZmlsZQ%3D%3D?line=33'&gt;34&lt;/a&gt;</span>     num_guesses += 1
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-06-unit3-9-11.ipynb#X25sZmlsZQ%3D%3D?line=34'&gt;35&lt;/a&gt;</span>     print(f"You guessed {user_guess}.")
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-06-unit3-9-11.ipynb#X25sZmlsZQ%3D%3D?line=35'&gt;36&lt;/a&gt;</span>     lower_bound, upper_bound = search(number, user_guess)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-06-unit3-9-11.ipynb#X25sZmlsZQ%3D%3D?line=36'&gt;37&lt;/a&gt;</span>     print(f"Guess a number between {lower_bound} and {upper_bound}.")
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-06-unit3-9-11.ipynb#X25sZmlsZQ%3D%3D?line=38'&gt;39&lt;/a&gt;</span> print(f"You guessed the number in {num_guesses} guesses!")
+
+<span class="ansi-green-intense-fg ansi-bold">/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-06-unit3-9-11.ipynb Cell 20</span> in <span class="ansi-cyan-fg">search</span><span class="ansi-blue-fg">(number, guess)</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-06-unit3-9-11.ipynb#X25sZmlsZQ%3D%3D?line=21'&gt;22&lt;/a&gt;</span> def search(number, guess):
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-06-unit3-9-11.ipynb#X25sZmlsZQ%3D%3D?line=22'&gt;23&lt;/a&gt;</span>     global lower_bound, upper_bound
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-06-unit3-9-11.ipynb#X25sZmlsZQ%3D%3D?line=23'&gt;24&lt;/a&gt;</span>     if guess &lt; number:
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-06-unit3-9-11.ipynb#X25sZmlsZQ%3D%3D?line=24'&gt;25&lt;/a&gt;</span>         print("You are bad at guessing") #change this
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-06-unit3-9-11.ipynb#X25sZmlsZQ%3D%3D?line=25'&gt;26&lt;/a&gt;</span>         lower_bound = guess
+
+<span class="ansi-red-fg">TypeError</span>: '&lt;' not supported between instances of 'NoneType' and 'int'</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
