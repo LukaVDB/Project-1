@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -135,13 +135,12 @@ window.onload = wrap_img;
 <li>A parameter is a variable that gets used in another function to show the data of a variable. </li>
 </ul>
 <ol>
-<li><p>Paste a <strong>screenshot</strong> of completion of the quiz</p>
-</li>
-<li><p>Define <strong>Return Values</strong> and <strong>Output Parameters</strong> in your own words</p>
-</li>
+<li>Paste a <strong>screenshot</strong> of completion of the quiz
+<img src="/Project-1/images/copied_from_nb/../images/ScreenShot2022-12-12at8.55.44PM.png" alt="ImageOne" /></li>
+<li>Define <strong>Return Values</strong> and <strong>Output Parameters</strong> in your own words</li>
 </ol>
 <ul>
-<li>A return value is a function that recalls a variable that has been defined previously. </li>
+<li>A return value is a function that recalls a variable that has been defined previously. An output parameter is when make limits on what the output can be. </li>
 </ul>
 <ol>
 <li>Code a <strong>procedure</strong> that finds the square root of any given number. (make sure to call and return the function)</li>
@@ -157,7 +156,8 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mi">8</span>
 
 <span class="k">def</span> <span class="nf">square_root</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -177,17 +177,9 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-08-Lesson-3.12-13-blog.ipynb Cell 4</span> in <span class="ansi-cyan-fg">&lt;cell line: 8&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-08-Lesson-3.12-13-blog.ipynb#W4sZmlsZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span>     square_root = x
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-08-Lesson-3.12-13-blog.ipynb#W4sZmlsZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span>     return square_root
-<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-08-Lesson-3.12-13-blog.ipynb#W4sZmlsZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span> answer = math.sqrt(x)
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2022-12-08-Lesson-3.12-13-blog.ipynb#W4sZmlsZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span> print(answer)
-
-<span class="ansi-red-fg">NameError</span>: name &#39;math&#39; is not defined</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2.0
+</pre>
 </div>
 </div>
 
@@ -201,9 +193,59 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Topic-3.13-(3.B):">Topic 3.13 (3.B):<a class="anchor-link" href="#Topic-3.13-(3.B):"> </a></h3><ol>
 <li>Explain, in your own words, why abstracting away your program logic into separate, modular functions is effective</li>
+</ol>
+<ul>
+<li>Abstracting your code makes it easier to organize and reuse your code. </li>
+</ul>
+<ol>
 <li>Create a procedure that uses other sub-procedures (other functions) within it and explain why the abstraction was needed (conciseness, shared behavior, etc.)</li>
 <li>Add another layer of abstraction to the word counter program (HINT: create a function that can count the number of words starting with ANY character in a given string -- how can we leverage parameters for this?)</li>
 </ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">main_procedure</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">x</span><span class="p">:</span>
+  <span class="c1"># Define the sub procedures.</span>
+  <span class="k">def</span> <span class="nf">add_numbers</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">y</span><span class="p">:</span>
+    <span class="c1"># Add two numbers.</span>
+    <span class="k">return</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">8</span>
+
+  <span class="k">def</span> <span class="nf">multiply_numbers</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="c1"># Multiply two numbers.</span>
+    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">8</span>
+
+  <span class="c1"># Call the sub procedures.</span>
+  <span class="n">sum_result</span> <span class="o">=</span> <span class="n">add_numbers</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+  <span class="n">product_result</span> <span class="o">=</span> <span class="n">multiply_numbers</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+
+  <span class="c1"># Return the sum of the numbers multiplied by their product.</span>
+  <span class="k">return</span> <span class="n">sum_result</span> <span class="o">*</span> <span class="n">product_result</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>makes it easier to organize the code.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Topic-3.13-(3.C):">Topic 3.13 (3.C):<a class="anchor-link" href="#Topic-3.13-(3.C):"> </a></h3><ol>
 <li>Define <font color="#ffffc2" style="font-weight: bold">procedure names</font> and <font color="#ffffc2" style="font-weight: bold">arguments</font> in your own words.</li>
 <li>Code some <font color="#ffffc2" style="font-weight: bold">procedures</font> that use <font color="#ffffc2" style="font-weight: bold">arguments</font> and <font color="#ffffc2" style="font-weight: bold">parameters</font> with Javascript and HTML (make sure they are interactive on your hacks page, allowing the user to input numbers and click a button to produce an output)<ul>
@@ -218,6 +260,43 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Procedure names: a procedure names is something that calls the procedure, used to make it easier later on in the code. An argument, is what allows the procedure to do whatever it needs with the arguments provided. </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">calculate_average</span><span class="p">(</span><span class="n">numbers</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span> <span class="s2">&quot;4&quot;</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+  <span class="c1"># Calculate the sum of the numbers.</span>
+  <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+    <span class="n">total</span> <span class="o">+=</span> <span class="n">num</span>
+
+  <span class="c1"># Calculate the average of the numbers.</span>
+  <span class="k">return</span> <span class="n">total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+
+  <span class="n">result</span> <span class="o">=</span> <span class="n">calculate_average</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+
+  
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
