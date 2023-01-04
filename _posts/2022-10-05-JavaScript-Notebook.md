@@ -6,7 +6,7 @@ branch: master
 badges: true
 comments: true
 author: Luka Van Den Boomen
-categories: [fastpages, JavaScript, Week 6]
+categories: [JavaScript, Week 6]
 nb_path: _notebooks/2022-10-05-JavaScript-Notebook.ipynb
 layout: notebook
 ---

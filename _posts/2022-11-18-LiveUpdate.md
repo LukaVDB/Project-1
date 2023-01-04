@@ -5,7 +5,6 @@ branch: master
 badges: true
 comments: true
 author: Luka Van Den Boomen
-categories: [fastpages]
 layout: post
 ---
 # Hello

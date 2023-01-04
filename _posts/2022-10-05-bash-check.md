@@ -6,7 +6,7 @@ branch: master
 badges: true
 comments: true
 author: Luka Van Den Boomen
-categories: [fastpages, jupyter, Week 1]
+categories: [jupyter, Week 1]
 nb_path: _notebooks/2022-10-05-bash-check.ipynb
 layout: notebook
 ---

@@ -5,7 +5,6 @@ title: Javascript Web Page using an API
 toc: false
 comments: false
 permalink: /techtalk/webfrontend
-categories: [3.B, 5.A, 5.B, C5.0, C7.0, C7.6]
 type: pbl
 week: 9
 nb_path: _notebooks/2022-10-17-PBL-javascript_frontend.ipynb

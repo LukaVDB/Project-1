@@ -6,7 +6,7 @@ branch: master
 badges: true
 comments: true
 author: Luka Van Den Boomen
-categories: [fastpages, jupyter, Week 2]
+categories: [jupyter, Week 2]
 nb_path: _notebooks/2022-10-05-Lists Quiz.ipynb
 layout: notebook
 ---

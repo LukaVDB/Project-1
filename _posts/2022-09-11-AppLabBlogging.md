@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: App planning.
-categories: [markdown, Week 0]
+categories: [markdown, Week 4]
 title: App Lab Planning
 ---
 

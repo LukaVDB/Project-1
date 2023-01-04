@@ -5,7 +5,7 @@ branch: master
 badges: true
 comments: true
 author: Luka Van Den Boomen
-categories: [fastpages, Week 4]
+categories: [Week 4]
 layout: post
 ---
 

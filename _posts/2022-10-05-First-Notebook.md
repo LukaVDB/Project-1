@@ -6,7 +6,7 @@ branch: master
 badges: true
 comments: true
 author: Luka Van Den Boomen
-categories: [fastpages, jupyter, Week 0]
+categories: [jupyter, Week 0]
 nb_path: _notebooks/2022-10-05-First Notebook.ipynb
 layout: notebook
 ---

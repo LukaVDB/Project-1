@@ -5,7 +5,6 @@ title: Python RapidAPI
 toc: true
 image: /images/rapidapi.png
 permalink: /techtalk/rapidapi
-categories: [1.A, 5.B, 5.D]
 tags: [api, rapidapi]
 type: pbl
 week: 7
