@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "3.5 to 3.7 Hacks",
+            "content": "Hacks . What do logical operators do? | Logical operators help the user connect multiple selections in a selection | . Logical operator . Not: displays the opposite of what the data says. And: Checks if both conditions are met. Or: Checks both conditons but only one needs to be met. . isWeekend = False result = not(isWeekend) print(result) . True . score = 56 # Has to be between 50 and 100 if score &gt; 50 and score &lt;= 100: print(&quot;You passed&quot;) . You passed . distance = 3 speed = 10 if distance &lt; 2 or speed &gt; 4: print(&quot;You won!&quot;) . Your team won! . Key Terms . Selection: The specific block of code that will execute depending on the algorithm condition returning true or false. | Algorithm: &quot;A finite set of instructions that accomplish a specific task.&quot; | Conditional Statement / If-Statement: A statement that affects the sequence of control by executing certain statements depending on the value of a boolean. | . x = int(input()) if x % 2 == 0: print(&quot;thats an even number&quot;) else: print(&quot;thats an odd number&quot;) . thats an odd number . print(&quot;are you going to school tommorow?&quot;) reply = input(&quot;yes or no&quot;) if reply == &quot;yes&quot;: print(&quot;great&quot;) if reply == &quot;no&quot;: print(&quot;oh no&quot;) . are you going to school tommorow? great . print(&quot;what quarter of the year are you in?&quot;) reply = input(&quot;1, 2, 3 or 4&quot;) if reply == &quot;1&quot;: print(&quot;Then its January, February or March&quot;) if reply == &quot;2&quot;: print(&quot;Then its April, May or June&quot;) if reply == &quot;3&quot;: print(&quot;Then its June, August or September&quot;) if reply == &quot;4&quot;: print(&quot;Then its October, November or December&quot;) . what quarter of the year are you in? Then its October, November or December .",
+            "url": "https://lukavdb.github.io/Project-1/student%20lesson%20hacks/2023/01/09/Student-Lesson-3.5-To-3.7-hacks.html",
+            "relUrl": "/student%20lesson%20hacks/2023/01/09/Student-Lesson-3.5-To-3.7-hacks.html",
+            "date": " • Jan 9, 2023"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "TeamManifesto",
             "content": ".",
             "url": "https://lukavdb.github.io/Project-1/2023/01/08/TeamManifesto.html",
@@ -12,20 +23,9 @@
     
   
     
-        ,"post1": {
-            "title": "3.5 to 3.7 Hacks",
-            "content": "Hacks . What do logical operators do? | Logical operators help the user connect multiple selections in a selection | . Logical operator . Not: displays the opposite of what the data says. And: Checks if both conditions are met. Or: Checks both conditons but only one needs to be met. . isWeekend = False result = not(isWeekend) print(result) . True . score = 56 # Has to be between 50 and 100 if score &gt; 50 and score &lt;= 100: print(&quot;You passed&quot;) . You passed . distance = 3 speed = 10 if distance &lt; 2 or speed &gt; 4: print(&quot;You won!&quot;) . Your team won! . Key Terms . Selection: The specific block of code that will execute depending on the algorithm condition returning true or false. | Algorithm: &quot;A finite set of instructions that accomplish a specific task.&quot; | Conditional Statement / If-Statement: A statement that affects the sequence of control by executing certain statements depending on the value of a boolean. | . x = int(input()) if x % 2 == 0: print(&quot;thats an even number&quot;) else: print(&quot;thats an odd number&quot;) . thats an odd number . print(&quot;are you going to school tommorow?&quot;) reply = input(&quot;yes or no&quot;) if reply == &quot;yes&quot;: print(&quot;great&quot;) if reply == &quot;no&quot;: print(&quot;oh no&quot;) . are you going to school tommorow? great . print(&quot;what quarter of the year are you in?&quot;) reply = input(&quot;1, 2, 3 or 4&quot;) if reply == &quot;1&quot;: print(&quot;Then its January, February or March&quot;) if reply == &quot;2&quot;: print(&quot;Then its April, May or June&quot;) if reply == &quot;3&quot;: print(&quot;Then its June, August or September&quot;) if reply == &quot;4&quot;: print(&quot;Then its October, November or December&quot;) . what quarter of the year are you in? Then its October, November or December .",
-            "url": "https://lukavdb.github.io/Project-1/student%20lesson%20hacks/2023/01/08/Student-Lesson-3.5-To-3.7-hacks.html",
-            "relUrl": "/student%20lesson%20hacks/2023/01/08/Student-Lesson-3.5-To-3.7-hacks.html",
-            "date": " • Jan 8, 2023"
-        }
-        
-    
-  
-    
         ,"post2": {
             "title": "Peer Grading",
-            "content": "Submission 1 . Reporting Category Student Score College Board Score Comments . Row 1: Program Purpose and Function | 0 | 1 | The student in the video shows that the program works well. | . Row 2: Data Abstraction | 1 | 0 | The list has various ways to filter the triangles. | . Row 3: Managing Complexity | 0 | 0 | The list doesn&#39;t show what he is doing. | . Row 4: Procedural Abstraction | 1 | 1 | 3.c.i. and 3.c.ii. The procedure is called. | . Row 5: Algorithm Implementation | 1 | 1 | His written response was detailed and showed what he needed. | . Row 6: Testing | 1 | 1 | His response shows that he met the conditions in the requirements. | . Submission 2 . Reporting Category Student Score College Board Score Comments . Row 1: Program Purpose and Function | 1 | 1 | The video shows that the program runs well. | . Row 2: Data Abstraction | 0 | 1 | There is no list. | . Row 3: Managing Complexity | 0 | 1 | Manages complexity well. | . Row 4: Procedural Abstraction | 1 | 1 | Uses procedures and uses them effectively. | . Row 5: Algorithm Implementation | 1 | 1 | Algorithm works well with the the rest of the program. | . Row 6: Testing | 1 | 1 | Alogrithm works and written response adresses all the requirements. | .",
+            "content": "Submission 1 . Reporting Category Student Score College Board Score Comments . Row 1: Program Purpose and Function | 1 | 0 | The student in the video shows that the program works well. Meets expectations. Collegeboard said that their response did not meet the criteria that was required. | . Row 2: Data Abstraction | 1 | 1 | The list has various ways to filter the triangles types. Would allow the program to run successfully. Collegeboard said that it also meets the requirements and that the response identifies what is inside the list. | . Row 3: Managing Complexity | 0 | 0 | The list doesn&#39;t show what he is doing. Collegeboard talks about how this person made all the classifications into one place but that is not necessary. | . Row 4: Procedural Abstraction | 1 | 1 | 3.c.i. and 3.c.ii. The procedure is called. Collegeboard says that he meets all of the requirements. | . Row 5: Algorithm Implementation | 1 | 1 | His written response was detailed and showed what he needed. Collegeboard talks about how he gives his steps of the algorithm in great detail. | . Row 6: Testing | 1 | 1 | His response shows that he met the conditions in the requirements. | . Submission 2 . Reporting Category Student Score College Board Score Comments . Row 1: Program Purpose and Function | 1 | 1 | The video shows that the program runs well. | . Row 2: Data Abstraction | 0 | 1 | There is no list. | . Row 3: Managing Complexity | 0 | 1 | Manages complexity well. | . Row 4: Procedural Abstraction | 1 | 1 | Uses procedures and uses them effectively. | . Row 5: Algorithm Implementation | 1 | 1 | Algorithm works well with the the rest of the program. | . Row 6: Testing | 1 | 1 | Alogrithm works and written response adresses all the requirements. | .",
             "url": "https://lukavdb.github.io/Project-1/2023/01/06/Peer-Grading.html",
             "relUrl": "/2023/01/06/Peer-Grading.html",
             "date": " • Jan 6, 2023"
