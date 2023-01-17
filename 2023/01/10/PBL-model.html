@@ -451,17 +451,17 @@ Test 4, make a dictionary
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_grade</span>
     
     <span class="c1"># a setter function, allows name to be updated after initial object creation</span>
-    <span class="nd">@age</span><span class="o">.</span><span class="n">setter</span>
+    <span class="nd">@grade</span><span class="o">.</span><span class="n">setter</span>
     <span class="k">def</span> <span class="nf">grade</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_grade</span> <span class="o">=</span> <span class="n">grade</span>
         
     <span class="c1"># age is calculated and returned each time it is accessed</span>
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_age</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span>
     
     <span class="c1"># a setter function, allows name to be updated after initial object creation</span>
-    <span class="nd">@age</span><span class="o">.</span><span class="n">setter</span>
+    <span class="nd">@dob</span><span class="o">.</span><span class="n">setter</span>
     <span class="k">def</span> <span class="nf">dob</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span> <span class="o">=</span> <span class="n">dob</span>
     
