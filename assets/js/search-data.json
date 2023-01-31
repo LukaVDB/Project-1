@@ -24,7 +24,7 @@
   
     
         ,"post2": {
-            "title": "CollegeBoard MCQ Blog",
+            "title": "Project Blog",
             "content": "Program purpose and function . The program purpose of this site is to help users manage their personal stocks. One of the functions of mine is that the user will take a quiz that would recommend them a stock based on their preferences. | Data Abstraction . This would call the list of questions and the possible responses. | Procedural Abstraction . This would be the quiz component. | Algorithm Implementation . This would also be the quiz that the user would take. | Testing . In the video I would show taking the quiz and the results you get from taking the quiz. .",
             "url": "https://lukavdb.github.io/Project-1/2023/01/29/Project-Blog.html",
             "relUrl": "/2023/01/29/Project-Blog.html",
