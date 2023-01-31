@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "CollegeBoard MCQ Blog",
-            "content": "My score . Question 1 . This would be incorrect because in the second part of the function, z is not max because y is larger than z. . Question 9 . Because it needs to indec the numbers from 1 to n, the loop needs to stop at n. . Question 11 . The value C is true, causing the value that comes out of the or function to not matter regardless of what it is. . Question 45 . Using your heuristics would allow for faster solving. . Question 49 . There will always be problems that will never be able to be determined by an algorithm. An example of this is determining when a program will stop. .",
+            "content": "My score . Question 1 . This would be incorrect because in the second part of the function, z is not max because y is larger than z. . Question 9 . Because it needs to indec the numbers from 1 to n, the loop needs to stop at n. . Question 11 . The value C is true, causing the value that comes out of the or function to not matter regardless of what it is. . Question 45 . Using your heuristics would allow for faster solving. This is because when you use heuristics, you are using things that you already knew before hand. This would allow for you to know the answer when you see recognize the question. . Question 49 . There will always be problems that will never be able to be determined by an algorithm. An example of this is determining when a program will stop. .",
             "url": "https://lukavdb.github.io/Project-1/2023/01/29/CollegeBoard_MCQ-Blog.html",
             "relUrl": "/2023/01/29/CollegeBoard_MCQ-Blog.html",
             "date": " • Jan 29, 2023"
