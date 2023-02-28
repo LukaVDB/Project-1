@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 toc: true
 title: Vocabulary
 categories: [vocabulary]
