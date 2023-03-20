@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      11 min read
+      8 min read
     
 </span></p>
 
@@ -417,128 +417,6 @@ window.onload = wrap_img;
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">InvalidRequestError</span>                       Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 7</span> in <span class="ansi-cyan-fg">&lt;cell line: 17&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> ''' Tutorial: https://www.sqlalchemy.org/library.html#tutorials, try to get into a Python shell and follow along '''
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span> # Define the User class to manage actions in the 'users' table
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=12'&gt;13&lt;/a&gt;</span> # -- Object Relational Mapping (ORM) is the key concept of SQLAlchemy
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span> # -- a.) db.Model is like an inner layer of the onion in ORM
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=14'&gt;15&lt;/a&gt;</span> # -- b.) User represents data we want to store, something that is built on db.Model
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span> # -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=16'&gt;17&lt;/a&gt;</span> class User(db.Model):
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=17'&gt;18&lt;/a&gt;</span>     __tablename__ = 'users'  # table name is plural, class name is singular
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=19'&gt;20&lt;/a&gt;</span>     # Define the User schema with "vars" from object
-
-File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/flask_sqlalchemy/model.py:67</span>, in <span class="ansi-cyan-fg">NameMetaMixin.__init__</span><span class="ansi-blue-fg">(cls, name, bases, d)</span>
-<span class="ansi-green-intense-fg ansi-bold">     64</span> if should_set_tablename(cls):
-<span class="ansi-green-intense-fg ansi-bold">     65</span>     cls.__tablename__ = camel_to_snake_case(cls.__name__)
-<span class="ansi-green-fg">---&gt; 67</span> super(NameMetaMixin, cls).__init__(name, bases, d)
-<span class="ansi-green-intense-fg ansi-bold">     69</span> # __table_cls__ has run at this point
-<span class="ansi-green-intense-fg ansi-bold">     70</span> # if no table was created, use the parent table
-<span class="ansi-green-intense-fg ansi-bold">     71</span> if (
-<span class="ansi-green-intense-fg ansi-bold">     72</span>     '__tablename__' not in cls.__dict__
-<span class="ansi-green-intense-fg ansi-bold">     73</span>     and '__table__' in cls.__dict__
-<span class="ansi-green-intense-fg ansi-bold">     74</span>     and cls.__dict__['__table__'] is None
-<span class="ansi-green-intense-fg ansi-bold">     75</span> ):
-
-File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/flask_sqlalchemy/model.py:121</span>, in <span class="ansi-cyan-fg">BindMetaMixin.__init__</span><span class="ansi-blue-fg">(cls, name, bases, d)</span>
-<span class="ansi-green-intense-fg ansi-bold">    115</span> def __init__(cls, name, bases, d):
-<span class="ansi-green-intense-fg ansi-bold">    116</span>     bind_key = (
-<span class="ansi-green-intense-fg ansi-bold">    117</span>         d.pop('__bind_key__', None)
-<span class="ansi-green-intense-fg ansi-bold">    118</span>         or getattr(cls, '__bind_key__', None)
-<span class="ansi-green-intense-fg ansi-bold">    119</span>     )
-<span class="ansi-green-fg">--&gt; 121</span>     super(BindMetaMixin, cls).__init__(name, bases, d)
-<span class="ansi-green-intense-fg ansi-bold">    123</span>     if bind_key is not None and getattr(cls, '__table__', None) is not None:
-<span class="ansi-green-intense-fg ansi-bold">    124</span>         cls.__table__.info['bind_key'] = bind_key
-
-File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/decl_api.py:72</span>, in <span class="ansi-cyan-fg">DeclarativeMeta.__init__</span><span class="ansi-blue-fg">(cls, classname, bases, dict_, **kw)</span>
-<span class="ansi-green-intense-fg ansi-bold">     69</span>         cls._sa_registry = reg
-<span class="ansi-green-intense-fg ansi-bold">     71</span> if not cls.__dict__.get("__abstract__", False):
-<span class="ansi-green-fg">---&gt; 72</span>     _as_declarative(reg, cls, dict_)
-<span class="ansi-green-intense-fg ansi-bold">     73</span> type.__init__(cls, classname, bases, dict_)
-
-File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/decl_base.py:126</span>, in <span class="ansi-cyan-fg">_as_declarative</span><span class="ansi-blue-fg">(registry, cls, dict_)</span>
-<span class="ansi-green-intense-fg ansi-bold">    121</span> def _as_declarative(registry, cls, dict_):
-<span class="ansi-green-intense-fg ansi-bold">    122</span> 
-<span class="ansi-green-intense-fg ansi-bold">    123</span>     # declarative scans the class for attributes.  no table or mapper
-<span class="ansi-green-intense-fg ansi-bold">    124</span>     # args passed separately.
-<span class="ansi-green-fg">--&gt; 126</span>     return _MapperConfig.setup_mapping(registry, cls, dict_, None, {})
-
-File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/decl_base.py:177</span>, in <span class="ansi-cyan-fg">_MapperConfig.setup_mapping</span><span class="ansi-blue-fg">(cls, registry, cls_, dict_, table, mapper_kw)</span>
-<span class="ansi-green-intense-fg ansi-bold">    174</span> else:
-<span class="ansi-green-intense-fg ansi-bold">    175</span>     cfg_cls = _ClassScanMapperConfig
-<span class="ansi-green-fg">--&gt; 177</span> return cfg_cls(registry, cls_, dict_, table, mapper_kw)
-
-File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/decl_base.py:322</span>, in <span class="ansi-cyan-fg">_ClassScanMapperConfig.__init__</span><span class="ansi-blue-fg">(self, registry, cls_, dict_, table, mapper_kw)</span>
-<span class="ansi-green-intense-fg ansi-bold">    318</span> self._extract_mappable_attributes()
-<span class="ansi-green-intense-fg ansi-bold">    320</span> self._extract_declared_columns()
-<span class="ansi-green-fg">--&gt; 322</span> self._setup_table(table)
-<span class="ansi-green-intense-fg ansi-bold">    324</span> self._setup_inheritance(mapper_kw)
-<span class="ansi-green-intense-fg ansi-bold">    326</span> self._early_mapping(mapper_kw)
-
-File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/decl_base.py:811</span>, in <span class="ansi-cyan-fg">_ClassScanMapperConfig._setup_table</span><span class="ansi-blue-fg">(self, table)</span>
-<span class="ansi-green-intense-fg ansi-bold">    806</span>         if autoload:
-<span class="ansi-green-intense-fg ansi-bold">    807</span>             table_kw["autoload"] = True
-<span class="ansi-green-intense-fg ansi-bold">    809</span>         table = self.set_cls_attribute(
-<span class="ansi-green-intense-fg ansi-bold">    810</span>             "__table__",
-<span class="ansi-green-fg">--&gt; 811</span>             table_cls(
-<span class="ansi-green-intense-fg ansi-bold">    812</span>                 tablename,
-<span class="ansi-green-intense-fg ansi-bold">    813</span>                 self._metadata_for_cls(manager),
-<span class="ansi-green-intense-fg ansi-bold">    814</span>                 *(tuple(declared_columns) + tuple(args)),
-<span class="ansi-green-intense-fg ansi-bold">    815</span>                 **table_kw
-<span class="ansi-green-intense-fg ansi-bold">    816</span>             ),
-<span class="ansi-green-intense-fg ansi-bold">    817</span>         )
-<span class="ansi-green-intense-fg ansi-bold">    818</span> else:
-<span class="ansi-green-intense-fg ansi-bold">    819</span>     if table is None:
-
-File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/flask_sqlalchemy/model.py:90</span>, in <span class="ansi-cyan-fg">NameMetaMixin.__table_cls__</span><span class="ansi-blue-fg">(cls, *args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">     87</span> key = _get_table_key(args[0], kwargs.get('schema'))
-<span class="ansi-green-intense-fg ansi-bold">     89</span> if key in cls.metadata.tables:
-<span class="ansi-green-fg">---&gt; 90</span>     return sa.Table(*args, **kwargs)
-<span class="ansi-green-intense-fg ansi-bold">     92</span> # if a primary key or constraint is found, create a table for
-<span class="ansi-green-intense-fg ansi-bold">     93</span> # joined-table inheritance
-<span class="ansi-green-intense-fg ansi-bold">     94</span> for arg in args:
-
-File <span class="ansi-green-fg">&lt;string&gt;:2</span>, in <span class="ansi-cyan-fg">__new__</span><span class="ansi-blue-fg">(cls, *args, **kw)</span>
-
-File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/util/deprecations.py:309</span>, in <span class="ansi-cyan-fg">deprecated_params.&lt;locals&gt;.decorate.&lt;locals&gt;.warned</span><span class="ansi-blue-fg">(fn, *args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    302</span>     if m in kwargs:
-<span class="ansi-green-intense-fg ansi-bold">    303</span>         _warn_with_version(
-<span class="ansi-green-intense-fg ansi-bold">    304</span>             messages[m],
-<span class="ansi-green-intense-fg ansi-bold">    305</span>             versions[m],
-<span class="ansi-green-intense-fg ansi-bold">    306</span>             version_warnings[m],
-<span class="ansi-green-intense-fg ansi-bold">    307</span>             stacklevel=3,
-<span class="ansi-green-intense-fg ansi-bold">    308</span>         )
-<span class="ansi-green-fg">--&gt; 309</span> return fn(*args, **kwargs)
-
-File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/schema.py:584</span>, in <span class="ansi-cyan-fg">Table.__new__</span><span class="ansi-blue-fg">(cls, *args, **kw)</span>
-<span class="ansi-green-intense-fg ansi-bold">    582</span> if key in metadata.tables:
-<span class="ansi-green-intense-fg ansi-bold">    583</span>     if not keep_existing and not extend_existing and bool(args):
-<span class="ansi-green-fg">--&gt; 584</span>         raise exc.InvalidRequestError(
-<span class="ansi-green-intense-fg ansi-bold">    585</span>             "Table '%s' is already defined for this MetaData "
-<span class="ansi-green-intense-fg ansi-bold">    586</span>             "instance.  Specify 'extend_existing=True' "
-<span class="ansi-green-intense-fg ansi-bold">    587</span>             "to redefine "
-<span class="ansi-green-intense-fg ansi-bold">    588</span>             "options and columns on an "
-<span class="ansi-green-intense-fg ansi-bold">    589</span>             "existing Table object." % key
-<span class="ansi-green-intense-fg ansi-bold">    590</span>         )
-<span class="ansi-green-intense-fg ansi-bold">    591</span>     table = metadata.tables[key]
-<span class="ansi-green-intense-fg ansi-bold">    592</span>     if extend_existing:
-
-<span class="ansi-red-fg">InvalidRequestError</span>: Table 'users' is already defined for this MetaData instance.  Specify 'extend_existing=True' to redefine options and columns on an existing Table object.</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -622,34 +500,6 @@ File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sql
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 9</span> in <span class="ansi-cyan-fg">&lt;cell line: 30&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=26'&gt;27&lt;/a&gt;</span>                 '''fails with bad or duplicate data'''
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=27'&gt;28&lt;/a&gt;</span>                 print(f"Records exist uid {user.uid}, or error.")
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=29'&gt;30&lt;/a&gt;</span> initUsers()
-
-<span class="ansi-green-intense-fg ansi-bold">/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 9</span> in <span class="ansi-cyan-fg">initUsers</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> db.create_all()
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> """Tester data for table"""
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> u1 = User(name='Thomas Edison', uid='toby', password='123toby', dob=date(1847, 2, 11))
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> u2 = User(name='Nikola Tesla', uid='niko', password='123niko')
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1-2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span> u3 = User(name='Alexander Graham Bell', uid='lex', password='123lex')
-
-<span class="ansi-red-fg">NameError</span>: name 'date' is not defined</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -666,8 +516,7 @@ File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sql
 <li>Comment on purpose of following</li>
 </ul>
 <ol>
-<li>User.query.filter_by</li>
-<li>user.password</li>
+<li>User.query.filter_by:Allows the user to be found by their user ID2. user.password: Checks if the users password is corresponding with the correct user's password.</li>
 </ol>
 
 </div>
@@ -702,22 +551,6 @@ File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sql
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>False</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -734,10 +567,9 @@ File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sql
 <li>Comment on purpose of following</li>
 </ul>
 <ol>
-<li>user.find_by_uid() and try/except</li>
-<li>user = User(...)</li>
-<li>user.dob and try/except</li>
-<li>user.create() and try/except</li>
+<li>user.find_by_uid() and try/except:This finds if the user already has an account from their id. 2. user = User(...): This is used in the create account to allow the user to create their account with name and password. </li>
+<li>user.dob and try/except: This is used to create/set the dob of the user. </li>
+<li>user.create() and try/except: This is used to add a new user to the database. </li>
 </ol>
 
 </div>
@@ -809,8 +641,7 @@ File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sql
 <li>Comment on purpose of following</li>
 </ul>
 <ol>
-<li>User.query.all</li>
-<li>json_ready assignment</li>
+<li>User.query.all:This shows all of the users in the table. 2. json_ready assignment: Generates lists in python. </li>
 </ol>
 
 </div>
@@ -834,22 +665,6 @@ File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sql
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[]</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
