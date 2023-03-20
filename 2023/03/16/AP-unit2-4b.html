@@ -168,9 +168,12 @@ window.onload = wrap_img;
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
 <ul>
 <li>A database schema is the data that describes datbase. Metadata for the database. </li>
-<li>What is the purpose of identity Column in SQL database?</li>
+<li>What is the purpose of identity Column in SQL database? </li>
+<li>Describes what the data in that column is</li>
 <li>What is the purpose of a primary key in SQL database?</li>
+<li>A way to identify each data. For users it would be a uid</li>
 <li>What are the Data Types in SQL table?</li>
+<li>Integers, lists, strings</li>
 </ul>
 
 </div>
@@ -243,10 +246,9 @@ window.onload = wrap_img;
 <p>Uses SQL SELECT statement to read data</p>
 </blockquote>
 <ul>
-<li>What is a connection object?  After you google it, what do you think it does?</li>
-<li>Same for cursor object?</li>
-<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
-<li>Is "results" an object?  How do you know?</li>
+<li>What is a connection object?  After you google it, what do you think it does?:I think it allows you to link the databse with the function.- Same for cursor object?: This is used to fetch data from the database. </li>
+<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?: transition, factory, arrowsize. </li>
+<li>Is "results" an object?  How do you know?: Yes because it has attributed information that was provided in the table.</li>
 </ul>
 
 </div>
@@ -296,6 +298,7 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>(1, 'Luka', 'LVDB', 'password', '2005-09-29')
+(2, 'Bob', '4321', '64274bjr', '2000-01-01')
 </pre>
 </div>
 </div>
@@ -315,8 +318,7 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?:-  Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
 </ul>
 </blockquote>
 
@@ -558,8 +560,9 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(1, 'Luka', 'LVDB', 'password', '2005-09-29')
+<pre>A new user record 4321 has been created
 (1, 'Luka', 'LVDB', 'password', '2005-09-29')
+(2, 'Bob', '4321', '64274bjr', '2000-01-01')
 </pre>
 </div>
 </div>
