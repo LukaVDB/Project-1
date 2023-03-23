@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Own Database | fastpages Project</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Own Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The first project." />
+<meta property="og:description" content="The first project." />
+<link rel="canonical" href="https://lukavdb.github.io/Project-1/2023/03/16/own-database.html" />
+<meta property="og:url" content="https://lukavdb.github.io/Project-1/2023/03/16/own-database.html" />
+<meta property="og:site_name" content="fastpages Project" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-16T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Own Database" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-16T00:00:00-05:00","datePublished":"2023-03-16T00:00:00-05:00","description":"The first project.","headline":"Own Database","mainEntityOfPage":{"@type":"WebPage","@id":"https://lukavdb.github.io/Project-1/2023/03/16/own-database.html"},"url":"https://lukavdb.github.io/Project-1/2023/03/16/own-database.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Project-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://lukavdb.github.io/Project-1/feed.xml" title="fastpages Project" /><link rel="shortcut icon" type="image/x-icon" href="/Project-1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/Project-1/">fastpages Project</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Project-1/JavaScript">JavaScript</a><a class="page-link" href="/Project-1/vocabulary/overview">Vocabulary</a><a class="page-link" href="/Project-1/about/">About Me</a><a class="page-link" href="/Project-1/search/">Search</a><a class="page-link" href="/Project-1/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Own Database</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-03-16T00:00:00-05:00" itemprop="datePublished">
+        Mar 16, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/LukaVDB/Project-1/tree/master/_notebooks/2023-03-16-own-database.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/Project-1/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/LukaVDB/Project-1/master?filepath=_notebooks%2F2023-03-16-own-database.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Project-1/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/LukaVDB/Project-1/blob/master/_notebooks/2023-03-16-own-database.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Project-1/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FLukaVDB%2FProject-1%2Fblob%2Fmaster%2F_notebooks%2F2023-03-16-own-database.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/Project-1/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Reading-drivers-table-in-Sqlite.db">Reading drivers table in Sqlite.db </a></li>
+<li class="toc-entry toc-h2"><a href="#Create-a-new-driver-in-table-in-Sqlite.db">Create a new driver in table in Sqlite.db </a></li>
+<li class="toc-entry toc-h2"><a href="#Updating-a-driver-in-table-in-Sqlite.db">Updating a driver in table in Sqlite.db </a></li>
+<li class="toc-entry toc-h2"><a href="#Deleting-a-driver-in-table-in-Sqlite.db">Deleting a driver in table in Sqlite.db </a></li>
+<li class="toc-entry toc-h2"><a href="#CRUD-a-driver-in-table-in-Sqlite.db">CRUD a driver in table in Sqlite.db </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-03-16-own-database.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/sqlite.db'</span> <span class="c1"># this is location of database</span>
+
+<span class="k">def</span> <span class="nf">schema</span><span class="p">():</span>
+    
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL queries</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    
+    <span class="c1"># Fetch results of Schema</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"PRAGMA table_info('drivers2')"</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+    <span class="c1"># Print the results</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+
+    <span class="c1"># Close the database connection</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+<span class="n">schema</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Reading-drivers-table-in-Sqlite.db">
+<a class="anchor" href="#Reading-drivers-table-in-Sqlite.db" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reading drivers table in Sqlite.db<a class="anchor-link" href="#Reading-drivers-table-in-Sqlite.db"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">read</span><span class="p">():</span>
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL queries</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    
+    <span class="c1"># Execute a SELECT statement to retrieve data from a table</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'SELECT * FROM drivers2'</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+    <span class="c1"># Print the results</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Table is empty"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+
+    <span class="c1"># Close the cursor and connection objects</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+<span class="n">read</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">OperationalError</span>                          Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/lukavandenboomen/vscode/Project-1/_notebooks/2023-03-16-own-database.ipynb Cell 4</span> in <span class="ansi-cyan-fg">&lt;cell line: 24&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1/_notebooks/2023-03-16-own-database.ipynb#W5sZmlsZQ%3D%3D?line=20'&gt;21&lt;/a&gt;</span>     cursor.close()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1/_notebooks/2023-03-16-own-database.ipynb#W5sZmlsZQ%3D%3D?line=21'&gt;22&lt;/a&gt;</span>     conn.close()
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1/_notebooks/2023-03-16-own-database.ipynb#W5sZmlsZQ%3D%3D?line=23'&gt;24&lt;/a&gt;</span> read()
+
+<span class="ansi-green-intense-fg ansi-bold">/Users/lukavandenboomen/vscode/Project-1/_notebooks/2023-03-16-own-database.ipynb Cell 4</span> in <span class="ansi-cyan-fg">read</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1/_notebooks/2023-03-16-own-database.ipynb#W5sZmlsZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> cursor = conn.cursor()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1/_notebooks/2023-03-16-own-database.ipynb#W5sZmlsZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> # Execute a SELECT statement to retrieve data from a table
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1/_notebooks/2023-03-16-own-database.ipynb#W5sZmlsZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> results = cursor.execute('SELECT * FROM drivers2').fetchall()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1/_notebooks/2023-03-16-own-database.ipynb#W5sZmlsZQ%3D%3D?line=12'&gt;13&lt;/a&gt;</span> # Print the results
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lukavandenboomen/vscode/Project-1/_notebooks/2023-03-16-own-database.ipynb#W5sZmlsZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span> if len(results) == 0:
+
+<span class="ansi-red-fg">OperationalError</span>: no such table: drivers2</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Create-a-new-driver-in-table-in-Sqlite.db">
+<a class="anchor" href="#Create-a-new-driver-in-table-in-Sqlite.db" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create a new driver in table in Sqlite.db<a class="anchor-link" href="#Create-a-new-driver-in-table-in-Sqlite.db"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">create</span><span class="p">():</span>
+    <span class="n">lastname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the driver last name:"</span><span class="p">)</span>
+    <span class="n">firstname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the driver first name:"</span><span class="p">)</span>
+    <span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the drivers password"</span><span class="p">)</span>
+    <span class="n">points</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the drivers points"</span><span class="p">)</span>
+    
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL commands</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Execute an SQL command to insert data into a table</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO drivers2 (_lastname, _firstname, _password, _points) VALUES (?, ?, ?, ?)"</span><span class="p">,</span> <span class="p">(</span><span class="n">lastname</span><span class="p">,</span> <span class="n">firstname</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">points</span><span class="p">))</span>
+        
+        <span class="c1"># Commit the changes to the database</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"A new driver record </span><span class="si">{</span><span class="n">firstname</span><span class="si">}</span><span class="s2"> has been created"</span><span class="p">)</span>
+                
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while executing the INSERT:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+
+
+    <span class="c1"># Close the cursor and connection objects</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+<span class="c1">#create()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Updating-a-driver-in-table-in-Sqlite.db">
+<a class="anchor" href="#Updating-a-driver-in-table-in-Sqlite.db" aria-hidden="true"><span class="octicon octicon-link"></span></a>Updating a driver in table in Sqlite.db<a class="anchor-link" href="#Updating-a-driver-in-table-in-Sqlite.db"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">update</span><span class="p">():</span>
+    <span class="n">lastname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the updated last name"</span><span class="p">)</span>
+    <span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter updated password"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">password</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="s2">"hacked"</span>
+        <span class="n">password</span> <span class="o">=</span> <span class="s1">'gothackednewpassword123'</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="s2">"successfully updated"</span>
+
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL commands</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Execute an SQL command to update data in a table</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"UPDATE drivers2 SET _password = ? WHERE _firstname = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">firstname</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># The firstname was not found in the table</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No firstname </span><span class="si">{</span><span class="n">firstname</span><span class="si">}</span><span class="s2"> was not found in the table"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The row with driver id </span><span class="si">{</span><span class="n">firstname</span><span class="si">}</span><span class="s2"> the password has been </span><span class="si">{</span><span class="n">message</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while executing the UPDATE:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+        
+    
+    <span class="c1"># Close the cursor and connection objects</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+<span class="c1">#update()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Deleting-a-driver-in-table-in-Sqlite.db">
+<a class="anchor" href="#Deleting-a-driver-in-table-in-Sqlite.db" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deleting a driver in table in Sqlite.db<a class="anchor-link" href="#Deleting-a-driver-in-table-in-Sqlite.db"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">delete</span><span class="p">():</span>
+    <span class="n">firstname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter driver id to delete"</span><span class="p">)</span>
+
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL commands</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"DELETE FROM drivers2 WHERE _firstname = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">firstname</span><span class="p">,))</span>
+        <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># The firstname was not found in the table</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No firstname </span><span class="si">{</span><span class="n">firstname</span><span class="si">}</span><span class="s2"> was not found in the table"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># The firstname was found in the table and the row was deleted</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The row with firstname </span><span class="si">{</span><span class="n">firstname</span><span class="si">}</span><span class="s2"> was successfully deleted"</span><span class="p">)</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while executing the DELETE:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+        
+    <span class="c1"># Close the cursor and connection objects</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+<span class="c1">#delete()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="CRUD-a-driver-in-table-in-Sqlite.db">
+<a class="anchor" href="#CRUD-a-driver-in-table-in-Sqlite.db" aria-hidden="true"><span class="octicon octicon-link"></span></a>CRUD a driver in table in Sqlite.db<a class="anchor-link" href="#CRUD-a-driver-in-table-in-Sqlite.db"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">menu</span><span class="p">():</span>
+    <span class="n">operation</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter: (C)reate (R)ead (U)pdate or (D)elete or (S)chema"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'c'</span><span class="p">:</span>
+        <span class="n">create</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'r'</span><span class="p">:</span>
+        <span class="n">read</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'u'</span><span class="p">:</span>
+        <span class="n">update</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'d'</span><span class="p">:</span>
+        <span class="n">delete</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'s'</span><span class="p">:</span>
+        <span class="n">schema</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">operation</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="c1"># Escape Key</span>
+        <span class="k">return</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter c, r, u, or d"</span><span class="p">)</span> 
+    <span class="n">menu</span><span class="p">()</span> <span class="c1"># recursion, repeat menu</span>
+        
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">menu</span><span class="p">()</span> <span class="c1"># start menu</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Perform Jupyter 'Run All' prior to starting menu"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A new user record 4321 has been created
+(1, 'Luka', 'LVDB', 'password', '2005-09-29')
+(2, 'Bob', '4321', '64274bjr', '2000-01-01')
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/Project-1/2023/03/16/own-database.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Project-1/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://lukavdb.github.io/Project-1/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/Project-1/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>The first project.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
