@@ -38,7 +38,7 @@ permalink: /frontend/tablejs
 <script>
     $
   $(document).ready(function() {
-    fetch('https://flask.nighthawkcodingsociety.com/api/menu/', { mode: 'cors' })
+    fetch('https://playgroundproject.duckdns.org/api/menu/', { mode: 'cors' })
     .then(response => {
       if (!response.ok) {
         throw new Error('API response failed');
