@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "My JavaScript Table",
-            "content": ". ID Name Pizza Price Size . . Name: . Pizza: . Size: . Priee: . Create .",
+            "content": ". ID Name Pizza Size Price .",
             "url": "https://lukavdb.github.io/Project-1/frontend/tablejs",
             "relUrl": "/frontend/tablejs",
             "date": " • Jun 1, 2023"
