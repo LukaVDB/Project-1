@@ -73,8 +73,8 @@ permalink: /frontend/tablejs
             row.id + '</td><td>' + 
             row.name + '</td><td>' + 
             row.pizza + '</td><td>' + 
-            row.size + '</td></td>')
-            row.price + '</td></td>;
+            row.size + '</td></td>' +
+            row.price + '</td></td>')
             }
             $
       $("#flaskTable").DataTable();
